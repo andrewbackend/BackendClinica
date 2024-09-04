@@ -21,39 +21,40 @@
         <form id="appointmentForm">
             <h2>Datos del Paciente</h2>
             <label for="patientName">Nombre Completo:</label>
-            <input type="text" id="patientName" name="patientName" required>
+            <input type="text" id="patientName" name="patientName" >
 
             <label for="patientID">Número de Identificación:</label>
-            <input type="text" id="patientID" name="patientID" required>
+            <input type="text" id="patientID" name="patientID" >
 
             <label for="patientDOB">Fecha de Nacimiento:</label>
-            <input type="date" id="patientDOB" name="patientDOB" required>
+            <input type="date" id="patientDOB" name="patientDOB" >
 
             <label for="patientGender">Género:</label>
-            <select id="patientGender" name="patientGender" required>
+            <select id="patientGender" name="patientGender" >
+                <option value="0">Seleccione</option>
                 <option value="Masculino">Masculino</option>
                 <option value="Femenino">Femenino</option>
-                <option value="Otro">Otro</option>
             </select>
-
             <label for="patientPhone">Teléfono:</label>
-            <input type="tel" id="patientPhone" name="patientPhone" required>
+            <input type="tel" id="patientPhone" name="patientPhone" >
 
             <label for="patientEmail">Correo Electrónico:</label>
             <input type="email" id="patientEmail" name="patientEmail">
-
+            <!-- Validacion -->
+            <p style="color: red;"></p> 
+           
             <h2>Datos de la Cita</h2>
             <label for="appointmentDate">Fecha de la Cita:</label>
-            <input type="date" id="appointmentDate" name="appointmentDate" required>
+            <input type="date" id="appointmentDate" name="appointmentDate" >
 
             <label for="appointmentTime">Hora de la Cita:</label>
-            <input type="time" id="appointmentTime" name="appointmentTime" required>
+            <input type="time" id="appointmentTime" name="appointmentTime" >
 
             <label for="appointmentReason">Motivo de la Consulta:</label>
-            <textarea id="appointmentReason" name="appointmentReason" required></textarea>
+            <textarea id="appointmentReason" name="appointmentReason" ></textarea>
 
             <label for="specialty">Especialidad:</label>
-            <select id="specialty" name="specialty" required>
+            <select id="specialty" name="specialty" >
                 <option value="Cardiología">Cardiología</option>
                 <option value="Pediatría">Pediatría</option>
                 <option value="Dermatología">Dermatología</option>
@@ -61,7 +62,7 @@
             </select>
 
             <label for="doctor">Doctor Asignado:</label>
-            <input type="text" id="doctor" name="doctor" required>
+            <input type="text" id="doctor" name="doctor" >
 
             <label for="appointmentType">Tipo de Consulta:</label>
             <select id="appointmentType" name="appointmentType">
@@ -71,22 +72,23 @@
 
             <h2>Datos de la Secretaria</h2>
             <label for="secretaryName">Nombre de la Secretaria:</label>
-            <input type="text" id="secretaryName" name="secretaryName" required>
+            <input type="text" id="secretaryName" name="secretaryName" >
 
             <label for="secretaryID">Código de Secretaria:</label>
             <input type="text" id="secretaryID" name="secretaryID">
 
             <label for="registrationDate">Fecha de Registro:</label>
-            <input type="date" id="registrationDate" name="registrationDate" required>
+            <input type="date" id="registrationDate" name="registrationDate" >
 
             <label for="registrationTime">Hora de Registro:</label>
-            <input type="time" id="registrationTime" name="registrationTime" required>
+            <input type="time" id="registrationTime" name="registrationTime" >
 
             <label for="comments">Comentarios Adicionales:</label>
             <textarea id="comments" name="comments"></textarea>
-
+        
             <button type="submit">Registrar Cita</button>
         </form>
     </main>
+    <script src="js/script.js"></script>
 </body>
 </html>
