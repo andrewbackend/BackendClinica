@@ -1,11 +1,13 @@
 <!DOCTYPE html>
 <html lang="es">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Registro de Citas - Clínica Salud</title>
     <link rel="stylesheet" href="css/styless2.css">
 </head>
+
 <body>
     <!-- Menú de Opciones -->
     <nav>
@@ -20,75 +22,114 @@
     <main>
         <form id="appointmentForm">
             <h2>Datos del Paciente</h2>
-            <label for="patientName">Nombre Completo:</label>
-            <input type="text" id="patientName" name="patientName" >
+            <div class="form-control">
+                <label for="patientName">Nombre Completo:</label>
+                <input type="text" id="patientName" name="patientName">
+                <p style="color: red;"></p>
+            </div>
 
-            <label for="patientID">Número de Identificación:</label>
-            <input type="text" id="patientID" name="patientID" >
+            <div class="form-control">
+                <label for="patientID">Número de Identificación:</label>
+                <input type="text" id="patientID" name="patientID">
+                <p style="color: red;"></p>
+            </div>
 
-            <label for="patientDOB">Fecha de Nacimiento:</label>
-            <input type="date" id="patientDOB" name="patientDOB" >
+            <div class="form-control">
+                <label for="patientDOB">Fecha de Nacimiento:</label>
+                <input type="date" id="patientDOB" name="patientDOB">
+                <p style="color: red;"></p>
+            </div>
 
-            <label for="patientGender">Género:</label>
-            <select id="patientGender" name="patientGender" >
-                <option value="0">Seleccione</option>
-                <option value="Masculino">Masculino</option>
-                <option value="Femenino">Femenino</option>
-            </select>
-            <label for="patientPhone">Teléfono:</label>
-            <input type="tel" id="patientPhone" name="patientPhone" >
+            <div class="form-control">
+                <label for="patientGender">Género:</label>
+                <select id="patientGender" name="patientGender">
+                    <option value="0">Seleccione</option>
+                    <option value="Masculino">Masculino</option>
+                    <option value="Femenino">Femenino</option>
+                </select>
+                <p style="color: red;"></p>
+            </div>
 
-            <label for="patientEmail">Correo Electrónico:</label>
-            <input type="email" id="patientEmail" name="patientEmail">
-            <!-- Validacion -->
-            <p style="color: red;"></p> 
-           
+            <div class="form-control">
+                <label for="patientPhone">Teléfono:</label>
+                <input type="tel" id="patientPhone" name="patientPhone">
+                <p style="color: red;"></p>
+            </div>
+
+            <div class="form-control">
+                <label for="patientEmail">Correo Electrónico:</label>
+                <input type="email" id="patientEmail" name="patientEmail">
+                <p style="color: red;"></p>
+            </div>
+
             <h2>Datos de la Cita</h2>
-            <label for="appointmentDate">Fecha de la Cita:</label>
-            <input type="date" id="appointmentDate" name="appointmentDate" >
+            <div class="form-control">
+                <label for="appointmentDate">Fecha de la Cita:</label>
+                <input type="date" id="appointmentDate" name="appointmentDate">
+                <p style="color: red;"></p>
+            </div>
 
-            <label for="appointmentTime">Hora de la Cita:</label>
-            <input type="time" id="appointmentTime" name="appointmentTime" >
+            <div class="form-control">
+                <label for="appointmentTime">Hora de la Cita:</label>
+                <input type="time" id="appointmentTime" name="appointmentTime">
+                <p style="color: red;"></p>
+            </div>
 
-            <label for="appointmentReason">Motivo de la Consulta:</label>
-            <textarea id="appointmentReason" name="appointmentReason" ></textarea>
+            <div class="form-control">
+                <label for="appointmentReason">Motivo de la Consulta:</label>
+                <textarea id="appointmentReason" name="appointmentReason"></textarea>
+                <p style="color: red;"></p>
+            </div>
 
-            <label for="specialty">Especialidad:</label>
-            <select id="specialty" name="specialty" >
-                <option value="Cardiología">Cardiología</option>
-                <option value="Pediatría">Pediatría</option>
-                <option value="Dermatología">Dermatología</option>
-                <option value="Neurología">Neurología</option>
-            </select>
+            <div class="form-control">
+                <label for="specialty">Especialidad:</label>
+                <select id="specialty" name="specialty">
+                    <option value="0">Seleccione</option>
+                    <option value="Cardiología">Cardiología</option>
+                    <option value="Pediatría">Pediatría</option>
+                    <option value="Dermatología">Dermatología</option>
+                    <option value="Neurología">Neurología</option>
+                </select>
+                <p style="color: red;"></p>
+            </div>
 
-            <label for="doctor">Doctor Asignado:</label>
-            <input type="text" id="doctor" name="doctor" >
+            <div class="form-control">
+                <label for="doctor">Doctor Asignado:</label>
+                <input type="text" id="doctor" name="doctor">
+                <p style="color: red;"></p>
+            </div>
 
-            <label for="appointmentType">Tipo de Consulta:</label>
-            <select id="appointmentType" name="appointmentType">
-                <option value="Presencial">Presencial</option>
-                <option value="Virtual">Virtual</option>
-            </select>
+            <div class="form-control">
+                <label for="appointmentType">Tipo de Consulta:</label>
+                <select id="appointmentType" name="appointmentType">
+                    <option value="0">Seleccione</option>
+                    <option value="Presencial">Presencial</option>
+                    <option value="Virtual">Virtual</option>
+                </select>
+                <p style="color: red;"></p>
+            </div>
 
             <h2>Datos de la Secretaria</h2>
             <label for="secretaryName">Nombre de la Secretaria:</label>
-            <input type="text" id="secretaryName" name="secretaryName" >
+            <input type="text" id="secretaryName" name="secretaryName">
 
             <label for="secretaryID">Código de Secretaria:</label>
             <input type="text" id="secretaryID" name="secretaryID">
 
             <label for="registrationDate">Fecha de Registro:</label>
-            <input type="date" id="registrationDate" name="registrationDate" >
+            <input type="date" id="registrationDate" name="registrationDate">
 
             <label for="registrationTime">Hora de Registro:</label>
-            <input type="time" id="registrationTime" name="registrationTime" >
+            <input type="time" id="registrationTime" name="registrationTime">
 
             <label for="comments">Comentarios Adicionales:</label>
             <textarea id="comments" name="comments"></textarea>
-        
+
             <button type="submit">Registrar Cita</button>
         </form>
     </main>
     <script src="js/script.js"></script>
+
 </body>
+
 </html>
